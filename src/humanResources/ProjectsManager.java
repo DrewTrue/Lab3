@@ -5,6 +5,8 @@ public class ProjectsManager implements GroupsManager{
     private Node<EmployeeGroup> tail;
     private int size;
 
+    private final static int DEFAUL_SIZE = 1;
+
     public ProjectsManager(){
         this(new Node<EmployeeGroup>(null));
     }
@@ -13,7 +15,7 @@ public class ProjectsManager implements GroupsManager{
         this.head = head;
         tail.setNext(head);
         this.tail = head;
-        this.size = 0;
+        this.size = DEFAUL_SIZE;
     }
 
     public EmployeeGroup[] getEmployeesGroups(){

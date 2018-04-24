@@ -4,6 +4,7 @@ public class Department implements EmployeeGroup{
     private String name;
     private int size;
     private Employee[] employees;
+
     private final static int DEFAULT_SIZE = 8;
 
     public Department(String name) {
@@ -15,7 +16,7 @@ public class Department implements EmployeeGroup{
     }
 
     public Department(String name, Employee[] employees) {
-        this.size = 0;
+        this.size = employees.length;
         this.name = name;
         this.employees = employees;
     }

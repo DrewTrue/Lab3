@@ -11,7 +11,7 @@ public class DepartmentsManager implements GroupsManager{
     }
 
     public DepartmentsManager(String name, EmployeeGroup[] groups) {
-        this.size = 0;
+        this.size = groups.length;
         this.name = name;
         this.groups = groups;
     }
