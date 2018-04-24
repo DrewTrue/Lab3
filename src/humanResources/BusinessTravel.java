@@ -5,6 +5,7 @@ public final class BusinessTravel {
     private int daysCount;
     private String description;
     private String destination;
+    
     private final static String DEFAULT_LINE = "";
     private final static int DEFAULT_VALUE = 0;
 

@@ -5,6 +5,7 @@ public class Project implements EmployeeGroup{
     private int size;
     private Node<Employee> head;
     private Node<Employee> tail;
+    private Node<Employee> node;
 
     private final static Node DEFAULT_HEAD = null;
     private final static Node DEFAULT_TAIL = null;
@@ -20,7 +21,6 @@ public class Project implements EmployeeGroup{
     public Project(String name, Employee[] employees){
         this.name = name;
         this.size = employees.length;
-        Node<Employee> node;
         for(int i = 0; i < employees.length; i++){
             node = new Node<>(employees[i]);
             if(head == null)
