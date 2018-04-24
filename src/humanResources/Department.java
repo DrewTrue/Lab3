@@ -15,7 +15,7 @@ public class Department implements EmployeeGroup{
     }
 
     public Department(String name, Employee[] employees) {
-        this.size = 0;
+        this.size = employees.length;
         this.name = name;
         this.employees = employees;
     }
