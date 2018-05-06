@@ -7,14 +7,10 @@ public class Project implements EmployeeGroup{
     private Node<Employee> tail;
     private Node<Employee> node;
 
-    private final static Node DEFAULT_HEAD = null;
-    private final static Node DEFAULT_TAIL = null;
     private final static int DEFAULT_SIZE = 0;
 
     public Project(String name){
         this.name = name;
-        this.head = DEFAULT_HEAD;
-        this.tail = DEFAULT_TAIL;
         this.size = DEFAULT_SIZE;
     }
 
